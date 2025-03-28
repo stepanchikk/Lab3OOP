@@ -137,3 +137,8 @@ int main() {
     std::cout << "Різниця v1 - v3: "; diff.print();
     std::cout << "Векторний добуток v2 × v3: "; cross.print();
     std::cout << "Ділення v3 на 2: "; divided.print();
+    std::cout << "Всього створено векторів: " << Vector::getObjectCount() << std::endl;
+    std::cout << "Завершення програми...\n";
+    
+   return 0;  // Тут всі об'єкти будуть знищені, і деструктор виведе інформацію
+}
